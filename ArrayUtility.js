@@ -31,7 +31,7 @@ Array.prototype.remove = function(TARGET) {
 			}
 
 			this.pop();
-		} else if (index === lastIndex) {
+		} else {
 			this.pop();
 		}
 	}

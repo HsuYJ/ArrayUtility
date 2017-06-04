@@ -1,5 +1,5 @@
 # ArrayUtility
-Some tested utility for Array
+Tested utilities used by Array.
 
 ## Array.prototype.removeByIndex()
 
