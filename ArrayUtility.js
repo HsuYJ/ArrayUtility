@@ -29,10 +29,8 @@ Array.prototype.remove = function(TARGET) {
 			for (var i = index; i < lastIndex; i++) {
 				this[i] = this[i + 1];
 			}
-
-			this.pop();
-		} else {
-			this.pop();
 		}
+
+		this.pop();
 	}
 };
