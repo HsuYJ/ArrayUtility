@@ -18,9 +18,9 @@ Array.prototype.removeByIndex = function(INDEX) {
 	}
 };
 
-Array.prototype.remove = function(TARGET) {
+Array.prototype.remove = function(ITEM) {
 
-	var index = this.indexOf(TARGET);
+	var index = this.indexOf(ITEM);
 
 	if (index !== -1) {
 		var lastIndex = this.length - 1;
@@ -32,5 +32,22 @@ Array.prototype.remove = function(TARGET) {
 		}
 
 		this.pop();
+	}
+};
+
+Array.prototype.insert = function(INDEX, ITEM) {
+
+	var presntLength = ARR.length;
+
+	if (INDEX >= presntLength) {
+		ARR.push(ITEM);
+	} else {
+		ARR.length = presntLength + 1;
+
+		for (var i = presntLength; i > INDEX; i--) {
+			ARR[i] = ARR[i - 1];
+		}
+
+		ARR[INDEX] = ITEM;
 	}
 };
